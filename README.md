@@ -10,3 +10,6 @@
   * DIP CABLE - CDP16S/AE16G/CDP16S【C6PPS-1618G】
   * https://www.marutsu.co.jp/pc/i/11845286/
 
+## 回路図
+
+![回路図](image/PC8001-TTL232C.jpg)
