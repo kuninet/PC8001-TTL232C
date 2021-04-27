@@ -1,0 +1,422 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "PC-8001 FTDI 232C Adaptor"
+Date "2021-04-25"
+Rev "1"
+Comp "KUNI-NET"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_02x08_Counter_Clockwise J?
+U 1 1 61622CF3
+P 4250 2650
+F 0 "J?" H 4300 3167 50  0000 C CNN
+F 1 "PC-8001 Internal 232C" H 4300 3076 50  0000 C CNN
+F 2 "" H 4250 2650 50  0001 C CNN
+F 3 "~" H 4250 2650 50  0001 C CNN
+	1    4250 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 2350 4050 2350
+Wire Wire Line
+	3700 2450 4050 2450
+Wire Wire Line
+	3700 2550 4050 2550
+Wire Wire Line
+	3700 2650 4050 2650
+Wire Wire Line
+	3700 2750 4050 2750
+Wire Wire Line
+	3700 2850 4050 2850
+Wire Wire Line
+	3700 2950 4050 2950
+Wire Wire Line
+	3700 3050 4050 3050
+Wire Wire Line
+	4550 2350 4950 2350
+Wire Wire Line
+	4550 2450 4950 2450
+Wire Wire Line
+	4550 2550 4950 2550
+Wire Wire Line
+	4550 2650 4950 2650
+Wire Wire Line
+	4550 2950 4950 2950
+Wire Wire Line
+	4550 3050 4950 3050
+$Comp
+L Connector_Generic:Conn_01x06 J?
+U 1 1 616242F5
+P 7500 2650
+F 0 "J?" H 7450 2950 50  0000 L CNN
+F 1 "FTDI 232C" H 7350 2250 50  0000 L CNN
+F 2 "" H 7500 2650 50  0001 C CNN
+F 3 "~" H 7500 2650 50  0001 C CNN
+	1    7500 2650
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	3600 2250 3700 2350
+Entry Wire Line
+	3600 2350 3700 2450
+Entry Wire Line
+	3600 2450 3700 2550
+Entry Wire Line
+	3600 2550 3700 2650
+Entry Wire Line
+	3600 2650 3700 2750
+Entry Wire Line
+	3600 2750 3700 2850
+Entry Wire Line
+	3600 2850 3700 2950
+Entry Wire Line
+	3600 2950 3700 3050
+Entry Wire Line
+	4950 2950 5050 2850
+Entry Wire Line
+	4950 3050 5050 2950
+Wire Wire Line
+	6950 2450 7300 2450
+Wire Wire Line
+	6950 2550 7300 2550
+Wire Wire Line
+	6950 2750 7300 2750
+Wire Wire Line
+	6950 2850 7300 2850
+Wire Wire Line
+	6950 2950 7300 2950
+Entry Wire Line
+	6850 2350 6950 2450
+Entry Wire Line
+	6850 2450 6950 2550
+Entry Wire Line
+	6850 2650 6950 2750
+Entry Wire Line
+	6850 2750 6950 2850
+Entry Wire Line
+	6850 2850 6950 2950
+Wire Bus Line
+	3600 1750 5050 1750
+Wire Bus Line
+	5050 1750 6850 1750
+Text Label 3800 2350 0    50   ~ 0
+GND
+Text Label 3800 2450 0    50   ~ 0
+~TxD
+Text Label 3800 2550 0    50   ~ 0
+~RxD
+Text Label 3800 2650 0    50   ~ 0
+RTS
+Text Label 3800 2750 0    50   ~ 0
+CTS
+Text Label 3800 2850 0    50   ~ 0
+DSR
+Text Label 3800 2950 0    50   ~ 0
+CD
+Text Label 3800 3050 0    50   ~ 0
+DTR
+Text Label 4600 3050 0    50   ~ 0
+GND
+Text Label 4600 2950 0    50   ~ 0
+GND
+Text Label 4600 2850 0    50   ~ 0
+VCC
+Text Label 4600 2750 0    50   ~ 0
+GND
+Text Label 4600 2650 0    50   ~ 0
++12V
+Text Label 4600 2550 0    50   ~ 0
+GND
+Text Label 4600 2450 0    50   ~ 0
+-12V
+Text Label 4600 2350 0    50   ~ 0
+GND
+Text Label 7050 2450 0    50   ~ 0
+GND
+Text Notes 7600 2500 0    50   ~ 0
+GND
+Text Notes 7600 2600 0    50   ~ 0
+~CTS
+Text Notes 7600 2700 0    50   ~ 0
++5V
+Text Notes 7600 2800 0    50   ~ 0
+TxD
+Text Notes 7600 2900 0    50   ~ 0
+RxD
+Text Notes 7600 3000 0    50   ~ 0
+~RTS
+Text Label 7050 2950 0    50   ~ 0
+~CTS
+Text Label 7050 2850 0    50   ~ 0
+TxD
+Text Label 7050 2750 0    50   ~ 0
+RxD
+NoConn ~ 7300 2650
+Text Label 7050 2550 0    50   ~ 0
+~RTS
+$Comp
+L 74xx:74HCT04 U?
+U 1 1 6162A39B
+P 5750 2250
+F 0 "U?" H 5700 2250 50  0000 C CNN
+F 1 "74HCT04" H 5750 2476 50  0000 C CNN
+F 2 "" H 5750 2250 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 5750 2250 50  0001 C CNN
+	1    5750 2250
+	1    0    0    -1  
+$EndComp
+Connection ~ 5050 1750
+Wire Wire Line
+	5150 2250 5450 2250
+Wire Wire Line
+	5150 2700 5450 2700
+Entry Wire Line
+	5050 2150 5150 2250
+Entry Wire Line
+	5050 2600 5150 2700
+Text Label 5200 2250 0    50   ~ 0
+~TxD
+Text Label 5200 2700 0    50   ~ 0
+~RxD
+Entry Wire Line
+	5050 4100 5150 4200
+Text Label 5200 4200 0    50   ~ 0
+DSR
+Entry Wire Line
+	6850 4100 6750 4200
+Text Label 6650 4200 2    50   ~ 0
+DTR
+Wire Wire Line
+	5150 4200 6750 4200
+Wire Wire Line
+	6050 2700 6750 2700
+Wire Wire Line
+	6050 2250 6750 2250
+Text Label 6500 2250 0    50   ~ 0
+TxD
+Text Label 6500 2700 0    50   ~ 0
+RxD
+Entry Wire Line
+	6750 2250 6850 2150
+Entry Wire Line
+	6750 2700 6850 2600
+$Comp
+L 74xx:74HCT04 U?
+U 3 1 616455F4
+P 5750 3200
+F 0 "U?" H 5700 3200 50  0000 C CNN
+F 1 "74HCT04" H 5750 3426 50  0000 C CNN
+F 2 "" H 5750 3200 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 5750 3200 50  0001 C CNN
+	3    5750 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HCT04 U?
+U 4 1 61645FF5
+P 5800 3700
+F 0 "U?" H 5750 3700 50  0000 C CNN
+F 1 "74HCT04" H 5800 3926 50  0000 C CNN
+F 2 "" H 5800 3700 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 5800 3700 50  0001 C CNN
+	4    5800 3700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HCT04 U?
+U 5 1 61646AA5
+P 7800 4250
+F 0 "U?" H 7750 4250 50  0000 C CNN
+F 1 "74HCT04" H 7800 4476 50  0000 C CNN
+F 2 "" H 7800 4250 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 7800 4250 50  0001 C CNN
+	5    7800 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HCT04 U?
+U 6 1 61647410
+P 7800 4750
+F 0 "U?" H 7750 4750 50  0000 C CNN
+F 1 "74HCT04" H 7800 4976 50  0000 C CNN
+F 2 "" H 7800 4750 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 7800 4750 50  0001 C CNN
+	6    7800 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HCT04 U?
+U 7 1 6164804A
+P 4000 4600
+F 0 "U?" H 3950 4600 50  0000 C CNN
+F 1 "74HCT04" H 4250 4250 50  0000 C CNN
+F 2 "" H 4000 4600 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 4000 4600 50  0001 C CNN
+	7    4000 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 61649779
+P 4000 3900
+F 0 "#PWR?" H 4000 3750 50  0001 C CNN
+F 1 "VCC" H 4017 4073 50  0000 C CNN
+F 2 "" H 4000 3900 50  0001 C CNN
+F 3 "" H 4000 3900 50  0001 C CNN
+	1    4000 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3900 4000 4000
+$Comp
+L Device:C_Small C?
+U 1 1 6164A669
+P 4200 4000
+F 0 "C?" V 3971 4000 50  0000 C CNN
+F 1 "0.1u" V 4062 4000 50  0000 C CNN
+F 2 "" H 4200 4000 50  0001 C CNN
+F 3 "~" H 4200 4000 50  0001 C CNN
+	1    4200 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4000 4000 4100 4000
+Connection ~ 4000 4000
+Wire Wire Line
+	4000 4000 4000 4100
+$Comp
+L power:GND #PWR?
+U 1 1 6164C319
+P 4350 4100
+F 0 "#PWR?" H 4350 3850 50  0001 C CNN
+F 1 "GND" H 4355 3927 50  0000 C CNN
+F 2 "" H 4350 4100 50  0001 C CNN
+F 3 "" H 4350 4100 50  0001 C CNN
+	1    4350 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 4000 4350 4000
+Wire Wire Line
+	4350 4000 4350 4100
+$Comp
+L power:GND #PWR?
+U 1 1 6164D2FB
+P 4000 5250
+F 0 "#PWR?" H 4000 5000 50  0001 C CNN
+F 1 "GND" H 4005 5077 50  0000 C CNN
+F 2 "" H 4000 5250 50  0001 C CNN
+F 3 "" H 4000 5250 50  0001 C CNN
+	1    4000 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 5100 4000 5250
+Wire Wire Line
+	4550 2750 4800 2750
+Wire Wire Line
+	4800 2750 4800 3300
+$Comp
+L power:GND #PWR?
+U 1 1 6164FEDB
+P 4800 3300
+F 0 "#PWR?" H 4800 3050 50  0001 C CNN
+F 1 "GND" H 4805 3127 50  0000 C CNN
+F 2 "" H 4800 3300 50  0001 C CNN
+F 3 "" H 4800 3300 50  0001 C CNN
+	1    4800 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 61651555
+P 4850 2200
+F 0 "#PWR?" H 4850 2050 50  0001 C CNN
+F 1 "VCC" H 4867 2373 50  0000 C CNN
+F 2 "" H 4850 2200 50  0001 C CNN
+F 3 "" H 4850 2200 50  0001 C CNN
+	1    4850 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 2200 4850 2850
+Wire Wire Line
+	4850 2850 4550 2850
+Entry Wire Line
+	4950 2550 5050 2450
+Entry Wire Line
+	4950 2350 5050 2250
+NoConn ~ 4950 2450
+NoConn ~ 4950 2650
+$Comp
+L power:GND #PWR?
+U 1 1 61654648
+P 7400 4900
+F 0 "#PWR?" H 7400 4650 50  0001 C CNN
+F 1 "GND" H 7405 4727 50  0000 C CNN
+F 2 "" H 7400 4900 50  0001 C CNN
+F 3 "" H 7400 4900 50  0001 C CNN
+	1    7400 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 4900 7400 4750
+Wire Wire Line
+	7500 4250 7400 4250
+Wire Wire Line
+	7500 4750 7400 4750
+Connection ~ 7400 4750
+Wire Wire Line
+	7400 4750 7400 4250
+NoConn ~ 8100 4250
+NoConn ~ 8100 4750
+$Comp
+L 74xx:74HCT04 U?
+U 2 1 6163AB76
+P 5750 2700
+F 0 "U?" H 5700 2700 50  0000 C CNN
+F 1 "74HCT04" H 5750 2926 50  0000 C CNN
+F 2 "" H 5750 2700 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 5750 2700 50  0001 C CNN
+	2    5750 2700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 3200 6050 3200
+Entry Wire Line
+	6850 3100 6750 3200
+Text Label 6650 3200 2    50   ~ 0
+~RTS
+Wire Wire Line
+	6750 3700 6100 3700
+Entry Wire Line
+	6850 3600 6750 3700
+Text Label 6650 3700 2    50   ~ 0
+~CTS
+Wire Wire Line
+	5150 3200 5450 3200
+Wire Wire Line
+	5150 3700 5500 3700
+Entry Wire Line
+	5050 3100 5150 3200
+Entry Wire Line
+	5050 3600 5150 3700
+Text Label 5200 3200 0    50   ~ 0
+RTS
+Text Label 5250 3700 0    50   ~ 0
+CTS
+Wire Bus Line
+	5050 1750 5050 4100
+Wire Bus Line
+	3600 1750 3600 2950
+Wire Bus Line
+	6850 1750 6850 4100
+$EndSCHEMATC
